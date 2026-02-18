@@ -2,6 +2,12 @@
 
 A React Native application that enables users to upload, view, and manage files, similar to Google Drive's file management system.
 
+## 📱 Screenshots
+
+<img src="./assets/screenshots/1.png" alt="screenshot-1">
+<img src="./assets/screenshots/2.png" alt="screenshot-1">
+<img src="./assets/screenshots/3.png" alt="screenshot-1">
+
 ## 📱 Features
 
 - **User Authentication** - Google sign up / sign in

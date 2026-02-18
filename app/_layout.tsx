@@ -1,24 +1,28 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+// app/_layout.tsx
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { BottomSheetProvider } from "@/providers/bottom-sheet-provider";
+import { PortalHost } from "@rn-primitives/portal";
+import { Slot } from "expo-router";
+import React from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { Toaster } from "sonner-native";
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import "@/global.css";
+import LoadingFontsProvider from "@/providers/loading-fonts-provider";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <SafeAreaView style={{ flex: 1 }}>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <BottomSheetProvider>
+          <LoadingFontsProvider>
+            <Slot />
+          </LoadingFontsProvider>
+          <PortalHost />
+          <Toaster />
+        </BottomSheetProvider>
+      </GestureHandlerRootView>
+    </SafeAreaView>
   );
 }

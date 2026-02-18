@@ -1,50 +1,36 @@
-# Welcome to your Expo app 👋
+# Filora
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application that enables users to upload, view, and manage files, similar to Google Drive's file management system.
 
-## Get started
+## 📱 Features
 
-1. Install dependencies
+- **User Authentication** - Google sign up / sign in
+- **File Upload** - Upload various file types (images, documents, PDFs, videos)
+- **File Management** - View, download, rename, and delete files
+- **Folder Organization** - Create and manage folders
+- **File Preview** - Preview images, PDFs, and documents
+- **Search Functionality** - Search files by name or type
+- **Share Files** - Share files with other users
+- **Offline Support** - Access files offline
+- **Real-time Sync** - Automatic synchronization across devices
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Technologies Used
 
-2. Start the app
+- **React Native** (v0.72+) - Mobile app framework
+- **Expo** - Development platform and tools
+- **Laravel** - Backend services (Authentication, Storage)
+- **React Navigation** - Navigation library
+- **React Native Document Picker** - File selection from device
+- **React Native FS** - File system operations
+- **React Native Image Picker** - Image selection from camera/gallery
+- **Zustand** - State management
+- **Axios** - API requests
 
-   ```bash
-   npx expo start
-   ```
+## 📋 Prerequisites
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Node.js (v16 or higher)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (Mac only) or Android Studio for emulator
+- Physical device for testing (optional)
+- Firebase account for backend services

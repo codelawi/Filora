@@ -27,7 +27,7 @@ export default function Index() {
           return prevIndex;
         }
       });
-    }, 5000);
+    }, 100);
 
     return () => clearInterval(interval);
   }, []);
